@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/hollandjb92/ProjectTwo/issues"
   },
-  "homepage": "https://github.com/hollandjb92/ProjectTwo#readme"
+  "homepage": "https://github.com/hollandjb92/ProjectTwo#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "sequelize": "^5.12.2"
+  }
 }
