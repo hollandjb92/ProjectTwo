@@ -1,0 +1,229 @@
+/* particle js */
+/* ---- reset ---- */
+
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: normal 85% Lato, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background-color: #1f2237;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* footer */
+
+footer {
+  background-color: #F8F9FA;
+  padding: 20px;
+  font-size: 110%;
+  position: absolute;
+  bottom: -130px;
+  width: 100%;
+}
+
+.footerNav {
+  list-style: none;
+  float: left;
+}
+
+.footerSocials {
+  list-style: none;
+  float: right;
+}
+
+.footerNav li,
+.footerSocials li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footerNav li:last-child,
+.footerSocials li:last-child {
+  margin-right: 0;
+}
+
+.footerNav li a:link,
+.footerNav li a:visited,
+.footerSocials li a:link,
+.footerSocials li a:visited {
+  text-decoration: none;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.footerNav li a:hover,
+.footerNav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 20px;
+}
+
+/* landing */
+#features {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 225px;
+
+}
+
+nav {
+  height: 75px;
+  background-color: #F8F9FA;
+
+}
+
+
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+#projectName {
+  font-size: 32px;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#projectName:hover,
+#projectName:active {
+  transform: scale(1.1);
+}
+
+*:focus {
+  outline: none;
+}
+
+
+
+#heroText {
+  position: relative;
+  top: 100px;
+}
+
+#heroText h2 {
+  position: relative;
+  left: 50px;
+}
+
+
+#heroH1 {
+  font-size: 100px;
+  position: relative;
+  right: 250px;
+}
+
+#searchInput {
+  width: 400px
+}
+
+
+#userButtons {
+  float: right;
+  list-style: none;
+  margin-top: 10px;
+}
+
+#userButtons:last-child {
+  margin-right: 10px;
+}
+
+#userButtons li {
+  display: inline-block;
+  margin-left: 40px;
+
+}
+
+ul li a {
+  margin-top: 20px;
+}
+
+#userButtons li a:link,
+#userButtons li a:visited {
+  padding-bottom: 8px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 150%;
+  transition: all 0.2s ease-in-out;
+
+
+}
+
+#userButtons li a:hover,
+#userButtons li a:active {
+  border-bottom: 2px solid #000;
+
+}
+
+#heroRegister {
+  font-size: 32px;
+  padding: 10px 40px;
+  margin-top: 20px
+}
+
+
+/* REGISTER */

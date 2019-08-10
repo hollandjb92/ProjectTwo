@@ -15,6 +15,27 @@
 <body>
 
   <header>
+    <div id="navBar">
+     
+      <nav class="navbar py-4 ">
 
- 
+        <a href="/" class="navbar-brand text-dark">
+          <span id="projectName">ProjectName</span></a>
+        <form  action="/search"   method="POST"  class="form-inline">
+          <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Search Games/TV/etc"
+            aria-label="Search" autocomplete="off">
+          <button class="btn btn-primary my-2 my-sm-0 shadow-none" type="submit" id="searchButton">Search</button>
+        </form>
+        <div id="userButtons"> 
+        <ul>
+        <li><a href="/about" class=""  id="about">About Us</a></li>
+        <li><a href="/login" class=""  id="login">Login</a></li>
+        <li><a href="/register" class=" " id="register">Sign Up</a></li>
+        </ul>
+     
+   
+
+          </div>
+      </nav>
+    </div>
   </header>
