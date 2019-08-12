@@ -1,5 +1,8 @@
+require('dotenv').config()
+
 const express = require("express"),
-  path = require("path")
+  path = require("path"),
+  axios = require("axios");
 
 
 
@@ -36,7 +39,24 @@ app.get("/about", (req, res) => {
 
 
 app.post("/search", (req, res) => {
-  res.render("search");
+  let query = req.body.gameSearch;
+
+
+  console.log(query);
+
+  axios.get("http://www.giantbomb.com/api/search?api_key=" + process.env.APIKEY + "&format=json&query=" + query + "[YOUR-SEARCH]&resources=game")
+
+    .then(response => {
+      // console.log(response.data.results[0, 1])
+      console.log(response.data.results.length);
+
+      res.render("search", {
+        response
+      });
+    })
+
+
+
 })
 
 
