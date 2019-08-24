@@ -2,9 +2,11 @@
 
 
 <% for(let i=0; i < response.data.results.length; i++){ %>
-<div class="searchResult"><img src="<%=response.data.results[i].image.small_url%>" alt="" class="float-left searchImage">
-<p class="display-4 text-white font-weight-bold">Game Title: <%=response.data.results[i].name%></p>
-<p class="display-4 text-white">Release Year: <%=response.data.results[i].expected_release_year%></p></div>
+<div class="searchResult">
+ <a  href="/show/<%=response.data.results[i].id%>"><img src="<%=response.data.results[i].image.small_url%>" alt="" class="float-left searchImage"></a>
+<a  href="/show/<%=response.data.results[i].id%>"><p class="display-4 text-white font-weight-bold"><%=response.data.results[i].name%></p></a>
+<p class="display-4 text-white"><%=response.data.results[i].expected_release_year%></p>
+</div>
 
 
 <% } %>

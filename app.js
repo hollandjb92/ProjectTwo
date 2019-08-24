@@ -48,17 +48,29 @@ app.post("/search", (req, res) => {
 
     .then(response => {
       // console.log(response.data.results[0, 1])
-      console.log(response.data.results.length);
+      console.log(response.data.results[0].id);
 
       res.render("search", {
         response
       });
     })
+})
 
+app.get("/show/:id", (req, res) => {
+  let gameID = req.params.id;
+
+  axios.get("http://www.giantbomb.com/api/game/" + gameID + "/?api_key=" + process.env.APIKEY + "&format=json")
+
+    .then(response => {
+
+
+      res.render("show", {
+        response
+      })
+    })
 
 
 })
-
 
 
 
